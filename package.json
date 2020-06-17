@@ -1,0 +1,26 @@
+{
+    "name": "django-template-snippets",
+    "displayName": "django-template-snippets",
+    "description": "Django Template Snippets",
+    "version": "0.0.1",
+    "publisher": "Stuart Elimu",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/stuartelimu/django-template-snippets"
+    },
+    "icon": "icon.png",
+    "engines": {
+        "vscode": "^1.46.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "html",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}

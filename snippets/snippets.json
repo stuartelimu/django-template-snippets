@@ -1,0 +1,42 @@
+{
+    "extends": {
+		"prefix": "extbase",
+		"body": "{% extends '${1:base.html}' %}",
+		"description": "Signals that this template extends a parent template."
+	},
+	"include": {
+		"prefix": "incl",
+		"body": "{% include '${1:partial.html}' %}",
+		"description": "Loads a template and renders it with the current context. This is a way of “including” other templates within a template."
+	},
+	"block": {
+		"prefix": "blk",
+		"body": "{% block ${1|content,title|} %}$2{% endblock ${1|content,title|} %}",
+		"description": "Defines a block that can be overridden by child templates"
+	},
+	"load": {
+		"prefix": "ld",
+		"body": "{% load ${1|static|} %}", 
+		"description": "Loads a custom template tag set."
+	},
+	"for": {
+		"prefix": "for",
+		"body": ["{% for $1 in $2 %}", "\t$0", "{% endfor %}"],
+		"description": "Loops over each item in an array, making the item available in a context variable."
+	},
+	"for...empty": {
+		"prefix": "foremp",
+		"body": ["{% for $1 in $2 %}", "\t$3", "{% empty %}", "\t$0", "{% endfor %}"],
+		"description": "The for tag can take an optional {% empty %} clause whose text is displayed if the given array is empty or could not be found"
+	},
+	"comment": {
+		"prefix": "com",
+		"body": "{% comment %}$1{% endcomment %}$0",
+		"description": "Ignores everything between {% comment %} and {% endcomment %}"
+	},
+	"if": {
+		"prefix": "if",
+		"body": ["{% if $1 %}","\t$2", "{% endif %}$0"],
+		"description": "if statement tag"
+	}
+}
