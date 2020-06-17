@@ -38,5 +38,36 @@
 		"prefix": "if",
 		"body": ["{% if $1 %}","\t$2", "{% endif %}$0"],
 		"description": "if statement tag"
+	},
+	"csrf_token": {
+		"prefix": "csr",
+		"body": "{% csrf_token %}$0",
+		"description": "The CSRF template tag provides easy-to-use protection against Cross Site Request Forgeries."
+	},
+	"static": {
+		"prefix": "sta",
+		"body": "{% static '${1:images/hi.jpg}' %}$0",
+		"description": "To link to static files that are saved in STATIC_ROOT Django ships with a static template tag"
+	},
+	"url": {
+		"prefix": "ur",
+		"body": "{% url '$1' $2 %}$0",
+		"description": "Returns an absolute path reference (a URL without the domain name) matching a given view and optional parameters"
+	},
+	"with": {
+		"prefix": "wi",
+		"body": ["{% with $1=$2 %}", "\t$3", "{% endwith %}$0"],
+		"description": "Caches a complex variable under a simpler name. This is useful when accessing an “expensive” method (e.g., one that hits the database) multiple times."
+	},
+	"lower": {
+		"prefix": "low",
+		"body": "{{ $1|lower }}$0",
+		"description": "Converts a string into all lowercase."
+	},
+	"upper": {
+		"prefix": "up",
+		"body": "{{ $1|upper }}$0",
+		"description": "Converts a string into all uppercase."
 	}
+
 }
