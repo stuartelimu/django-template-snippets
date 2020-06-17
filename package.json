@@ -2,7 +2,7 @@
     "name": "django-template-snippets",
     "displayName": "django-template-snippets",
     "description": "Django Template Snippets",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "publisher": "StuartElimu",
     "repository": {
         "type": "git",
