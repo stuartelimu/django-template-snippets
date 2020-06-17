@@ -3,7 +3,7 @@
     "displayName": "django-template-snippets",
     "description": "Django Template Snippets",
     "version": "0.0.1",
-    "publisher": "Stuart Elimu",
+    "publisher": "StuartElimu",
     "repository": {
         "type": "git",
         "url": "https://github.com/stuartelimu/django-template-snippets"

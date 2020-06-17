@@ -9,6 +9,10 @@ A collection of built-in template tags and filters for django templates.
 ## Installation
 Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter.
 
+```
+ext install StuartElimu.django-template-snippets
+```
+
 
 ## Usage
 
