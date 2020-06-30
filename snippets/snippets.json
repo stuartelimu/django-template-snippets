@@ -1,6 +1,6 @@
 {
     "extends": {
-		"prefix": "extbase",
+		"prefix": "ext",
 		"body": "{% extends '${1:base.html}' %}",
 		"description": "Signals that this template extends a parent template."
 	},
@@ -40,7 +40,7 @@
 		"description": "if statement tag"
 	},
 	"csrf_token": {
-		"prefix": "csr",
+		"prefix": "csrf",
 		"body": "{% csrf_token %}$0",
 		"description": "The CSRF template tag provides easy-to-use protection against Cross Site Request Forgeries."
 	},
@@ -50,7 +50,7 @@
 		"description": "To link to static files that are saved in STATIC_ROOT Django ships with a static template tag"
 	},
 	"url": {
-		"prefix": "ur",
+		"prefix": "url",
 		"body": "{% url '$1' $2 %}$0",
 		"description": "Returns an absolute path reference (a URL without the domain name) matching a given view and optional parameters"
 	},
@@ -58,6 +58,16 @@
 		"prefix": "wi",
 		"body": ["{% with $1=$2 %}", "\t$3", "{% endwith %}$0"],
 		"description": "Caches a complex variable under a simpler name. This is useful when accessing an “expensive” method (e.g., one that hits the database) multiple times."
+	},
+	"variable templatetag": {
+		"prefix": "{{",
+		"body": "{{ $1 }}",
+		"description": "Open and close variable templatetag."
+	},
+	"comment templatetag": {
+		"prefix": "{#",
+		"body": "{# $1 #}",
+		"description": "Open and close comment templatetag."
 	},
 	"lower": {
 		"prefix": "low",
