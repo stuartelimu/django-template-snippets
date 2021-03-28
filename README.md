@@ -1,4 +1,5 @@
-# django-template-snippets README
+# django-template-snippets
+![Issues](https://img.shields.io/github/issues/stuartelimu/django-template-snippets?color=0088ff) ![GitHub pull requests](https://img.shields.io/github/issues-pr/stuartelimu/django-template-snippets?color=0088ff)
 
 A collection of built-in template tags and filters for django templates.
 
@@ -8,10 +9,8 @@ Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter
 ext install StuartElimu.django-template-snippets
 ```
 
-## Cheat sheet
-The `|` character shows the cursor positions where you can insert or change content.
-
-All unknown abbreviations will be transformed to HTML tag, e.g. foo → `<foo></foo>`.
+## Usage
+![](usage.gif)
 
 ### Template tags
 
@@ -101,9 +100,9 @@ wi
 {# | #}
 ```
 
-## Usage
+>>The `|` character shows the cursor positions where you can insert or change content.
 
-![](usage.gif)
+>>All unknown abbreviations will be transformed to HTML tag, e.g. foo → `<foo></foo>`.
 
 ## Release Notes
 
