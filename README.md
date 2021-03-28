@@ -101,8 +101,7 @@ wi
 ```
 
 >>The `|` character shows the cursor positions where you can insert or change content.
-
->>All unknown abbreviations will be transformed to HTML tag, e.g. foo → `<foo></foo>`.
+All unknown abbreviations will be transformed to HTML tag, e.g. foo → `<foo></foo>`.
 
 ## Release Notes
 
