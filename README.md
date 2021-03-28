@@ -1,5 +1,5 @@
 # django-template-snippets
-![Issues](https://img.shields.io/github/issues/stuartelimu/django-template-snippets?color=0088ff) ![GitHub pull requests](https://img.shields.io/github/issues-pr/stuartelimu/django-template-snippets?color=0088ff)
+![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/StuartElimu.django-template-snippets?style=flat-square) ![Issues](https://img.shields.io/github/issues/stuartelimu/django-template-snippets?color=0088ff&style=flat-square) ![GitHub pull requests](https://img.shields.io/github/issues-pr/stuartelimu/django-template-snippets?color=0088ff&)
 
 A collection of built-in template tags and filters for django templates.
 
